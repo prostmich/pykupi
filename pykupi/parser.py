@@ -13,7 +13,7 @@ class KupiParser(BaseClient):
         item_id: str,
         min_price: Union[int, float] = 0.0,
         max_price: Union[int, float] = MAX_PRICE,
-    ):
+    ) -> Discount:
         page_url = get_page_url(KupiSection.DISCOUNT, item_id)
         results = await self.request(page_url)
         discount = Discount(**results)
