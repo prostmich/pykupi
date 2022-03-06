@@ -49,7 +49,7 @@ async def task():
     result = await parser.get_prices("banany", min_price=15)
     cheapest = result.offers[0]
     print(
-        f'The cheapest bananas now in {cheapest.offered_by} for {cheapest.price} CZK '
+        f'The cheapest bananas now in {cheapest.offered_by} for {cheapest.price} {cheapest.price_currency} '
         f'until {cheapest.valid_until.strftime("%d.%m.%Y")}'
     )
     # The cheapest bananas now in Kaufland for 24.9 CZK until 08.03.2022
