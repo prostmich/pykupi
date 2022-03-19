@@ -16,5 +16,5 @@ setuptools.setup(
     project_urls={"Bug Tracker": "https://github.com/prostmich/pykupi/issues"},
     license="MIT",
     packages=find_packages(),
-    install_requires=["aiohttp>=3.7.2,<4.0.0"],
+    install_requires=["aiohttp>=3.7.2,<4.0.0", "bs4==0.0.1", "pydantic>=1.9.0"],
 )
